@@ -169,7 +169,7 @@ def the_Tweet():
 
 def user_request_twitter(hermes, intent_message):
     session_id = intent_message.session_id
-    i_friends = int(INTENT_START.slots.friend.first().value)
+    i_friends = int(INTENT_START.slots.friends.first().value)
 
     if i_friends == "friends":
         response = "Nice opening {} their tweets. ".format(i_friends)
